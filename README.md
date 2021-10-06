@@ -15,25 +15,25 @@ download from imagenet web: https://image-net.org/download-images.
 other datasets(CIFAR10, SVHN) can be downloaded automatically.
   
 =============  
--train victim model  
+- Train victim model  
   
 mexmi/victim/train.py  
 train a victim model.  
 Victim path is config/VICTIM_PATH.  
   
 =============  
--adjust hyperparamters  
+- Adjust hyperparamters  
   
 lr_scheduler, optimizer para in-> models/parser_params.py  
   
 =============  
--perform MI Pre-Filter  
+- Perform MI Pre-Filter  
   
 mexmi/adversary/main.py  
 set sm_set 'membership_attack,{},{},{}'.format(membership_inference_algorithm,active_algorithm,remarks)  
   
 =============  
--perform Post-Filter  
+- Perform Post-Filter  
   
 mexmi/adversary/main.py  
 set following flags in mexmi/config.py  
@@ -41,7 +41,7 @@ set following flags in mexmi/config.py
 2. vic_mem_method = 'shadow_model' or 'unsupervised'  
   
 =============  
--perform semi-supervised boosting  
+- Perform semi-supervised boosting  
 
 mexmi/adversary/main_semi_supervised_boosting.py  
 This file is the step to perform semi-supervised boosting module after the attacker finished iteration training.  
