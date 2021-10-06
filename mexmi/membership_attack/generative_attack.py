@@ -1,0 +1,5 @@
+
+
+def GenerativeMemberAttack():
+
+    return None

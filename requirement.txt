@@ -1,0 +1,10 @@
+pytorch=10.1
+theano
+lasagne
+#update code in the theano-related package
+#in layer.pool.py:
+#1), change 'from theano.tensor.signal import downsample' to 'from theano.tensor.signal import pool'
+#2), replace 'downsample.max_pool_2d' with 'pool.pool_2d'.
+
+m2w64-toolchain
+libpython
