@@ -7,11 +7,11 @@ This project is the open source code of the paper 'MExMI: Pool-based Active Mode
 There should be a 'data' folder in parallel with 'mexmi' folder. Please create one before start the experiments.
 The dataset imagenet32 needs to be downloaded and has following structure:
   
-data/imagenet-32/train/-train_data_batch_1
-                  -train_data_batch_2
-                  -train_data_batch_3
-                  ...
-download from imagenet web: https://image-net.org/download-images.
+data/imagenet-32/train/-train_data_batch_1  
+                  -train_data_batch_2  
+                  -train_data_batch_3  
+                  ...  
+download from imagenet web: https://image-net.org/download-images.  
 other datasets(CIFAR10, SVHN) can be downloaded automatically.
   
 =============  
