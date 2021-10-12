@@ -1,4 +1,4 @@
--Abstract  
+- Abstract  
   
 This project is the open source code of the paper 'MExMI: Pool-based Active Model extraction crossover Membership Inference'. It can perform the model extraction attack on the local model.
   
