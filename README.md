@@ -20,12 +20,7 @@ other datasets(CIFAR10, SVHN) can be downloaded automatically.
 mexmi/victim/train.py  
 train a victim model.  
 Victim path is config/VICTIM_PATH.  
-  
-=============  
-- Adjust hyperparamters  
-  
-lr_scheduler, optimizer para in-> models/parser_params.py  
-  
+
 =============  
 - Perform MI Pre-Filter  
   
@@ -47,4 +42,4 @@ mexmi/adversary/main_semi_supervised_boosting.py
 This file is the step to perform semi-supervised boosting module after the attacker finished iteration training.  
 notice that the config file also impacts on this step.  
 1. change the num of initial seeds to the number of queried data.  
-2. change the num_iter to 1.  
+2. change the num_iter to 2.  
