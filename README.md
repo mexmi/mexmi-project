@@ -1,6 +1,6 @@
 - Abstract  
   
-This project is the open source code of the paper 'MExMI: Pool-based Active Model extraction crossover Membership Inference'. It can perform the model extraction attack on the local model.
+This project is the open source code of the paper 'MExMI: Pool-based Active Model Extraction Crossover Membership Inference'. It can perform the model extraction attack on the local model.
   
 =============  
 - Dataset preparation  
