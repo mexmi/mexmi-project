@@ -2,8 +2,8 @@
   
 This project is the open source code of the paper 'MExMI: Pool-based Active Model Extraction Crossover Membership Inference'. It can perform the model extraction attack on the local model as weel as the cloud model (The target cloud model needs to be deployed by the reader.).
 
-=============
-- Requirements
+=============  
+- Requirements  
 python==3.7  
 cudatoolkit==10.1  
 theano==1.0.4  
