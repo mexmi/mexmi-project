@@ -4,7 +4,7 @@ This project is the open source code of the paper 'MExMI: Pool-based Active Mode
 
 =============
 - Requirements
-python==3.7
+python==3.7 
 cudatoolkit==10.1
 theano==1.0.4
 lasagne==0.1
