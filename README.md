@@ -38,8 +38,8 @@ Victim path is config/VICTIM_PATH.
 - Parameter files  
   
 Custom parameters are in the params variable in mexmi/adversary/main.py, and in the config.py file.  
-For boolean parameters 'read_shadow_from_path', 'read_attack_mia_model_from_path', they should be False at first. They are desgined to read pretrained shadow-model MI attack model from path.  
-For boolean parameters 'transfer_mi' and 'augment_mi' is set for few-shot learning(FSL) shadow models. 'augment_mi' can be turn on or off freely, while 'transfer_mi' requires a pretrained models got via 'mexmi/victim/train.py' script.  
+1.For boolean parameters 'read_shadow_from_path', 'read_attack_mia_model_from_path', they should be False at first. They are desgined to read pretrained shadow-model MI attack model from path.  
+2.For boolean parameters 'transfer_mi' and 'augment_mi' is set for few-shot learning(FSL) shadow models. 'augment_mi' can be turn on or off freely, while 'transfer_mi' requires a pretrained models got via 'mexmi/victim/train.py' script.  
   
 =============  
 - Perform MI Pre-Filter  
