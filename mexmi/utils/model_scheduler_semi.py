@@ -158,7 +158,7 @@ def train_step(model, train_loader,unlabeled_loader, train_gt_loader=None, crite
     labeled_train_iter = iter(train_loader)
     unlabeled_train_iter = iter(unlabeled_loader)
 
-    #一个训练过程
+    
     i=0
     # for batch_idx, (inputs, targets) in enumerate(train_loader):
     for batch_idx in range(semi_args.train_iteration):
@@ -333,7 +333,7 @@ def test_step(model, test_loader, criterion, device, epoch=0., blackbox=None, bl
                 fid_num += predicted.eq(true_label).sum().item()
                 # print("blackbox_test_result is not None")
 
-            # if batch_idx >= 1249: #只选取10000个做test
+            # if batch_idx >= 1249: 
             #     break
 
     t_end = time.time()
@@ -558,7 +558,7 @@ def train_model(model, ema_model, trainset=None, unlabeled_set=None, trainset_gt
                                           )
 
     #How
-    if weighted_loss:#loss 是有权重的
+    if weighted_loss:#loss
         if not isinstance(trainset.samples[0][1], int):
             print('Labels in trainset is of type: {}. Expected: {}.'.format(type(trainset.samples[0][1]), int))
 
@@ -616,7 +616,7 @@ def train_model(model, ema_model, trainset=None, unlabeled_set=None, trainset_gt
     semi_criterion = SemiLoss()
 
     for epoch in range(start_epoch, epochs + 1): #1，101
-        #在这里就跑完了一个epoch
+        #
         train_loss, train_loss_x, train_loss_u = train_step(model, train_loader, unlabeled_loader=unlabeled_loader,
                                                             train_gt_loader=train_gt_loader, criterion=semi_criterion,
                                                             optimizer=optimizer, ema_optimizer=ema_optimizer,
