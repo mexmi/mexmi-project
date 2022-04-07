@@ -76,7 +76,6 @@ class FashionMNIST(TVFashionMNIST):
         super().__init__(root, train, transform, target_transform, download)
 
 class ChainMNIST(TVMNIST):
-    #目前就提供三个以内的chain
     def __init__(self, chain=['MNIST','FashionMNIST','EMNIST'], train=True, transform=None, target_transform=None, download=True):
         super(ChainMNIST, self).__init__(root="", train=train, transform=transform, target_transform=target_transform, download=download)
         self.datasets = np.empty(len(chain)).astype('str').tolist() #['', '']
