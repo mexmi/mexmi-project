@@ -4,8 +4,6 @@ some training utils.
 reference:
 	https://github.com/ZJULearning/RMI/blob/master/utils/train_utils.py
 	https://github.com/zhanghang1989/PyTorch-Encoding
-
-Contact: zhaoshuaimcc@gmail.com
 """
 
 from __future__ import absolute_import
