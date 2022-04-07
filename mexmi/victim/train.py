@@ -83,7 +83,7 @@ def main():
     train_transform = datasets.modelfamily_to_transforms[modelfamily]['train']
     test_transform = datasets.modelfamily_to_transforms[modelfamily]['test']
     print("train_transform:", train_transform.__class__)
-    #如果是mnist/ cifar是可以直接下载的吗
+    #
     trainset = dataset(train=True, transform=train_transform) #, download=True
     testset = dataset(train=False, transform=test_transform) #, download=True
 
