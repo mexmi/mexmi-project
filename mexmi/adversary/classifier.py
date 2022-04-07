@@ -1,10 +1,4 @@
-'''
-Created on 15 Nov 2017
 
-@author: ahmed.salem
-Based on https://github.com/csong27/membership-inference/blob/master/classifier.py
-
-'''
 import pickle
 import sys
 from sklearn.metrics import classification_report, accuracy_score
