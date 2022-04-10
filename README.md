@@ -65,7 +65,7 @@ notice that the config file also impacts on this step.
 2. change the num_iter to 2.  
 
 =============  
-Possible bug:
+- Possible bug:
 1. ImportError: cannot import name 'downsample' from 'theano.tensor.signal' (C:\ProgramData\Anaconda3\lib\site-packages\theano\tensor\signal\__init__.py)  
 
 Solution:  
