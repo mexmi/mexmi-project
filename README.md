@@ -63,3 +63,19 @@ This file is the step to perform semi-supervised boosting module after the attac
 notice that the config file also impacts on this step.  
 1. change the num of initial seeds to the number of queried data.  
 2. change the num_iter to 2.  
+
+=============  
+Possible bug:
+1. ImportError: cannot import name 'downsample' from 'theano.tensor.signal' (C:\ProgramData\Anaconda3\lib\site-packages\theano\tensor\signal\__init__.py)  
+
+Solution:  
+in layer.pool.py:  
+delete: from theano.tensor.signal import downsample  
+add: from theano.tensor.signal import pool  
+replace: downsample.max_pool_2d  
+with pool.pool_2d  
+
+2. FileNotFoundError: [Errno 2] No such file or directory: '…\\params.json'  
+
+Solution:  
+Copy the 'params.json; from VICTIM_DIR to ATTACK_MODEL_DIR.  
